@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minijuegos en JavaScript</title>
+    <!-- Por el momento a las apuradas hago el style en el propio html, es un pecado lo sé, luego haré una update con el archivo
+    css como corresponde. -->
+    <style>
+        body {
+            background: rgb(248, 238, 211);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+        }
+
+        h2 {
+            color: rgb(59, 81, 82);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 5em;
+        }
+
+        button {
+            height: 50px;
+            width: 90px;
+            background-color: rgb(247, 139, 52);
+            cursor: pointer;
+            border-radius: 20px;
+            color: rgb(255, 255, 255);
+
+            margin: 2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #eleccion-usuario {
+            color: rgb(23, 194, 0);
+        }
+
+        #eleccion-pc {
+            color: rgb(71, 71, 131);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Piedra Papel o Tijera</h1>
+
+        <h2>Tu elección: <span id="eleccion-usuario"></span></h2>
+        <h2>Elección de la PC: <span id="eleccion-pc"></span></h2>
+        <h2>Resultado: <span id="resultado-id"></span></h2>
+    </div>
+
+    <div class="btn">
+        <button id="Piedra">Piedra</button>
+        <button id="Papel">Papel</button>
+        <button id="Tijera">Tijera</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
